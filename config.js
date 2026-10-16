@@ -1,6 +1,6 @@
 module.exports = {
   paymentGateway: {
     provider: "NovaPay",
-    enabled: true,
+    enabled: process.env.PAYMENT_GATEWAY_ENABLED === "true",
   },
 };
